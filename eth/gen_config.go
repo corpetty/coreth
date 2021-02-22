@@ -5,11 +5,11 @@ package eth
 import (
 	"time"
 
-	"github.com/ava-labs/coreth/consensus/ethash"
-	"github.com/ava-labs/coreth/core"
-	"github.com/ava-labs/coreth/eth/gasprice"
-	"github.com/ava-labs/coreth/miner"
-	"github.com/ava-labs/coreth/params"
+	"github.com/corpetty/coreth/consensus/ethash"
+	"github.com/corpetty/coreth/core"
+	"github.com/corpetty/coreth/eth/gasprice"
+	"github.com/corpetty/coreth/miner"
+	"github.com/corpetty/coreth/params"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/eth/downloader"
 )

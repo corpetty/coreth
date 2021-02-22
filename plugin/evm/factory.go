@@ -3,7 +3,7 @@
 
 package evm
 
-import "github.com/ava-labs/avalanchego/ids"
+import "github.com/corpetty/avalanchego/ids"
 
 // ID this VM should be referenced by
 var (

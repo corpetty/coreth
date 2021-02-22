@@ -12,11 +12,11 @@ import (
 
 	"golang.org/x/crypto/sha3"
 
-	"github.com/ava-labs/coreth/consensus"
-	"github.com/ava-labs/coreth/core/state"
-	"github.com/ava-labs/coreth/core/types"
-	"github.com/ava-labs/coreth/params"
-	"github.com/ava-labs/coreth/rpc"
+	"github.com/corpetty/coreth/consensus"
+	"github.com/corpetty/coreth/core/state"
+	"github.com/corpetty/coreth/core/types"
+	"github.com/corpetty/coreth/params"
+	"github.com/corpetty/coreth/rpc"
 	mapset "github.com/deckarep/golang-set"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/rlp"

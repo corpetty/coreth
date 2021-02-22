@@ -30,8 +30,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ava-labs/coreth/internal/debug"
-	"github.com/ava-labs/coreth/rpc"
+	"github.com/corpetty/coreth/internal/debug"
+	"github.com/corpetty/coreth/rpc"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/p2p"

@@ -34,9 +34,9 @@ import (
 	"sort"
 	"time"
 
-	"github.com/ava-labs/coreth/core/rawdb"
-	"github.com/ava-labs/coreth/core/state/snapshot"
-	"github.com/ava-labs/coreth/core/types"
+	"github.com/corpetty/coreth/core/rawdb"
+	"github.com/corpetty/coreth/core/state/snapshot"
+	"github.com/corpetty/coreth/core/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/log"

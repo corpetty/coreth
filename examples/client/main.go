@@ -10,13 +10,13 @@ import (
 
 	"math/big"
 
-	"github.com/ava-labs/avalanchego/utils/crypto"
-	"github.com/ava-labs/avalanchego/utils/formatting"
-	"github.com/ava-labs/coreth/ethclient"
-	"github.com/ava-labs/coreth/plugin/evm"
+	"github.com/corpetty/avalanchego/utils/crypto"
+	"github.com/corpetty/avalanchego/utils/formatting"
+	"github.com/corpetty/coreth/ethclient"
+	"github.com/corpetty/coreth/plugin/evm"
 
-	"github.com/ava-labs/coreth"
-	"github.com/ava-labs/coreth/core/types"
+	"github.com/corpetty/coreth"
+	"github.com/corpetty/coreth/core/types"
 	"github.com/ethereum/go-ethereum/common"
 )
 

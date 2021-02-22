@@ -6,9 +6,9 @@ package main
 import (
 	"github.com/hashicorp/go-plugin"
 
-	"github.com/ava-labs/avalanchego/vms/rpcchainvm"
+	"github.com/corpetty/avalanchego/vms/rpcchainvm"
 
-	"github.com/ava-labs/coreth/plugin/evm"
+	"github.com/corpetty/coreth/plugin/evm"
 )
 
 func main() {

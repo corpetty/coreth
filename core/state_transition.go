@@ -30,8 +30,8 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/ava-labs/coreth/core/vm"
-	"github.com/ava-labs/coreth/params"
+	"github.com/corpetty/coreth/core/vm"
+	"github.com/corpetty/coreth/params"
 	"github.com/ethereum/go-ethereum/common"
 )
 

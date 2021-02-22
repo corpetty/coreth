@@ -29,10 +29,10 @@ package core
 import (
 	"fmt"
 
-	"github.com/ava-labs/coreth/consensus"
-	"github.com/ava-labs/coreth/core/state"
-	"github.com/ava-labs/coreth/core/types"
-	"github.com/ava-labs/coreth/params"
+	"github.com/corpetty/coreth/consensus"
+	"github.com/corpetty/coreth/core/state"
+	"github.com/corpetty/coreth/core/types"
+	"github.com/corpetty/coreth/params"
 	"github.com/ethereum/go-ethereum/trie"
 )
 

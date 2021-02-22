@@ -8,7 +8,7 @@ set -o pipefail
 GOPATH="$(go env GOPATH)"
 
 # Set default binary location
-BINARY_PATH="$GOPATH/src/github.com/ava-labs/avalanchego/build/plugins/evm"
+BINARY_PATH="$GOPATH/src/github.com/corpetty/avalanchego/build/plugins/evm"
 
 if [[ $# -eq 1 ]]; then
     BINARY_PATH=$1
@@ -21,4 +21,4 @@ GIT_COMMIT=$( git rev-list -1 HEAD )
 
 # Build Coreth, which is run as a subprocess
 echo "Building Coreth from GitCommit: $GIT_COMMIT"
-go build -ldflags "-X github.com/ava-labs/coreth/plugin/evm.GitCommit=$GIT_COMMIT" -o "$BINARY_PATH" "plugin/"*.go
+go build -ldflags "-X github.com/corpetty/coreth/plugin/evm.GitCommit=$GIT_COMMIT" -o "$BINARY_PATH" "plugin/"*.go

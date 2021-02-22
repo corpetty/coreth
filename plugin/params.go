@@ -8,7 +8,7 @@ import (
 	"flag"
 	"os"
 
-	"github.com/ava-labs/coreth/plugin/evm"
+	"github.com/corpetty/coreth/plugin/evm"
 )
 
 var (

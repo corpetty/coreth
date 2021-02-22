@@ -29,9 +29,9 @@ package clique
 import (
 	"fmt"
 
-	"github.com/ava-labs/coreth/consensus"
-	"github.com/ava-labs/coreth/core/types"
-	"github.com/ava-labs/coreth/rpc"
+	"github.com/corpetty/coreth/consensus"
+	"github.com/corpetty/coreth/core/types"
+	"github.com/corpetty/coreth/rpc"
 	"github.com/ethereum/go-ethereum/common"
 )
 
