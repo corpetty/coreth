@@ -27,7 +27,6 @@ func checkError(err error) {
 func main() {
 	// configure the chain
 	config := eth.DefaultConfig
-	config.ManualCanonical = true
 	chainConfig := &params.ChainConfig{
 		ChainID:             big.NewInt(1),
 		HomesteadBlock:      big.NewInt(0),
@@ -58,9 +57,8 @@ func main() {
 		Alloc:      core.GenesisAlloc{genKey.Address: {Balance: genBalance}},
 	}
 
-	// grab the control of block generation and disable auto uncle
+	// grab the control of block generation
 	config.Miner.ManualMining = true
-	config.Miner.DisableUncle = true
 
 	// info required to generate a transaction
 	chainID := chainConfig.ChainID
@@ -96,6 +94,8 @@ func main() {
 	chain.GetTxPool().SubscribeNewHeadEvent(newTxPoolHeadChan)
 	// start the chain
 	chain.Start()
+	chain.BlockChain().UnlockIndexing()
+	chain.SetPreference(chain.GetGenesisBlock())
 	for i := 0; i < 42; i++ {
 		tx := types.NewTransaction(nonce, bob.Address, value, uint64(gasLimit), gasPrice, nil)
 		signedTx, err := types.SignTx(tx, types.NewEIP155Signer(chainID), genKey.PrivateKey)
@@ -106,6 +106,7 @@ func main() {
 		block := <-newBlockChan
 		<-newTxPoolHeadChan
 		log.Info("finished generating block, starting the next iteration", "height", block.Number())
+		chain.SetPreference(block)
 	}
 	showBalance()
 	chain.Stop()
